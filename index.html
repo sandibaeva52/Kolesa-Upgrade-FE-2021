@@ -33,21 +33,25 @@
                                         src="/src/assets/pic_main.jpg"
                                         alt="pic_0"
                                         width="50px"
+                                        onclick="change(this.src)"
                                     />
                                     <img
                                         src="/src/assets/pic_1.jpg"
                                         alt="pic_1"
                                         width="50px"
+                                        onclick="change(this.src)"
                                     />
                                     <img
                                         src="/src/assets/pic_2.jpg"
                                         alt="pic_2"
                                         width="50px"
+                                        onclick="change(this.src)"
                                     />
                                     <img
                                         src="/src/assets/pic_3.jpg"
                                         alt="pic_3"
                                         width="50px"
+                                        onclick="change(this.src)"
                                     />
                                 </div>
                             </div>
@@ -209,6 +213,9 @@
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
+            };
+            const change = (src) => {
+                document.getElementById("main_pic").src = src;
             };
         </script>
     </body>
