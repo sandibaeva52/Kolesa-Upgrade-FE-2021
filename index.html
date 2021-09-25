@@ -1,13 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+        <link rel="stylesheet" href="/src/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <button id="myButton" class="myButton">Open modal window</button>
+
+            <div class="modal" id="myModal" aria-hidden="true">
+                <div class="modal_wrap">
+                    <div class="modal_window" role="dialog" aria-modal="true">
+                        <span class="close">&times;</span>
+
+                        <div class="content">
+                            <div class="img_preview">
+                                <div class="main">
+                                    <img
+                                        src="/src/assets/pic_main.jpg"
+                                        alt="pic_0"
+                                        id="main_pic"
+                                        class="main_photo"
+                                        width="250px"
+                                    />
+                                </div>
+                                <div class="preview_photos">
+                                    <img
+                                        src="/src/assets/pic_main.jpg"
+                                        alt="pic_0"
+                                        width="50px"
+                                    />
+                                    <img
+                                        src="/src/assets/pic_1.jpg"
+                                        alt="pic_1"
+                                        width="50px"
+                                    />
+                                    <img
+                                        src="/src/assets/pic_2.jpg"
+                                        alt="pic_2"
+                                        width="50px"
+                                    />
+                                    <img
+                                        src="/src/assets/pic_3.jpg"
+                                        alt="pic_3"
+                                        width="50px"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="product_description">
+                                <div class="basic_info">
+                                    <p class="title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </p>
+
+                                    <div class="order_details_wrap">
+                                        <div class="cost_order">
+                                            <p class="cost">100 баллов</p>
+                                            <button type="submit" class="order">
+                                                Заказать
+                                            </button>
+                                        </div>
+
+                                        <div class="balance_wrapper">
+                                            <p class="current_account">
+                                                Твой баланс:
+                                            </p>
+                                            <div class="account_balance">
+                                                <p class="current_points">
+                                                    3 945 баллов
+                                                </p>
+                                                <img
+                                                    src="/src/assets//shopping_bag.jpg"
+                                                    class="shopping_bag"
+                                                    alt="Изображение"
+                                                    width="30"
+                                                    height="30"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="details">Цвета:</p>
+                                <div class="colors">
+                                    <div class="color_choice">
+                                        <input
+                                            type="radio"
+                                            value="blue"
+                                            id="blue"
+                                            name="color"
+                                            placeholder="Синий"
+                                        />
+                                        <label for="blue"
+                                            ><img
+                                                src="/src/assets/blue.jpg"
+                                                class="color_pics"
+                                                alt="blue_pic"
+                                                width="30"
+                                                height="30"
+                                            />Синий</label
+                                        >
+                                    </div>
+                                    <div class="color_choice">
+                                        <input
+                                            type="radio"
+                                            value="white"
+                                            id="white"
+                                            name="color"
+                                            placeholder="Бежевый"
+                                        />
+                                        <label for="white"
+                                            ><img
+                                                src="/src/assets/white.jpg"
+                                                class="color_pics"
+                                                alt="white_pic"
+                                                width="30"
+                                                height="30"
+                                            />Бежевый</label
+                                        >
+                                    </div>
+                                    <div class="color_choice">
+                                        <input
+                                            type="radio"
+                                            value="gray"
+                                            id="gray"
+                                            name="color"
+                                            placeholder="Серый"
+                                        />
+                                        <label for="gray"
+                                            ><img
+                                                src="/src/assets/gray.jpg"
+                                                class="color_pics"
+                                                alt="gray_pic"
+                                                width="30"
+                                                height="30"
+                                            />Серый</label
+                                        >
+                                    </div>
+                                </div>
+
+                                <p class="details">Размер:</p>
+                                <div class="sizes">
+                                    <div class="size_choice">
+                                        <input
+                                            type="radio"
+                                            value="small"
+                                            id="small"
+                                            name="size"
+                                            placeholder="S"
+                                        />
+                                        <label for="small">S</label>
+                                    </div>
+                                    <div class="size_choice">
+                                        <input
+                                            type="radio"
+                                            value="medium"
+                                            id="medium"
+                                            name="size"
+                                            placeholder="M"
+                                        />
+                                        <label for="medium">M</label>
+                                    </div>
+                                    <div class="size_choice">
+                                        <input
+                                            type="radio"
+                                            value="large"
+                                            id="large"
+                                            name="size"
+                                            placeholder="L"
+                                        />
+                                        <label for="large">L</label>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p class="details">Детали:</p>
+                                    <p>
+                                        Брендированная толстовка от Qazaq
+                                        Republic. Материал: Хлопок 80%, Вискоза
+                                        20%
+                                    </p>
+                                    <p class="size">Как выбрать размер:</p>
+                                    <p>Написать дяде Рику для уточнения.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="/src/js/main.js"></script>
+        <script type="text/javascript">
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myButton");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function () {
+                modal.style.display = "block";
+            };
+            span.onclick = function () {
+                modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+        </script>
+    </body>
 </html>

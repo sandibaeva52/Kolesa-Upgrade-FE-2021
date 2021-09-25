@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.myButton {
+    background-color: white;
+    border: 2px solid #2a81dd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal_wrap {
+    margin: 15% auto;
+    padding: 60px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 16px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_window {
+    height: auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.product_description {
+    flex-grow: 1;
+    display: inline-block;
+}
+
+.basic_info {
+    width: inherit;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+}
+
+.order_details_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.order {
+    background-color: #2a81dd;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border: none;
+    width: 135px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cost {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1c1819;
+}
+
+.balance_wrapper {
+    display: inline-block;
+    background-color: #f0fafd;
+    border-radius: 16px;
+    width: 200px;
+    height: 70px;
+    text-align: left;
+    margin-top: 27px;
+}
+
+.current_account {
+    color: #888b94;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.account_balance {
+    background-color: #f0fafd;
+    border-radius: 16px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.current_points {
+    color: #1c1819;
+    background-color: transparent;
+    font-size: 16px;
+    margin: 0;
+    line-height: 0px;
+}
+
+.shopping_bag {
+    margin: 0;
+    position: relative;
+    bottom: 25px;
+}
+
+.details,
+.size {
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.img_preview {
+    flex-grow: 1;
+    height: fit-content;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.main_photo {
+    cursor: pointer;
+}
+
+.preview_photos img {
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.preview_photos {
+    width: fit-content;
+    vertical-align: middle;
+}
